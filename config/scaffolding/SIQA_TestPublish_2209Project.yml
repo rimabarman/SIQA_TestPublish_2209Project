@@ -16,6 +16,18 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2070
+- serviceName: project.siqa_testpublish_2209.integrations:Sum
+  packages:
+  - name: SIQA_TestPublish_2209Project
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
 - serviceName: project.siqa_testpublish_2209.integrations:deepclonetest
   packages:
   - name: SIQA_TestPublish_2209Project
