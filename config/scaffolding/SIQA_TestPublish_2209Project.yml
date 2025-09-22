@@ -8,6 +8,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: rimabarman
@@ -17,6 +18,8 @@ services:
   packages:
   - name: SIQA_TestPublish_2209Project
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -24,6 +27,8 @@ services:
 - serviceName: project.siqa_testpublish_2209.integrations:Sum
   packages:
   - name: SIQA_TestPublish_2209Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
 - serviceName: pub.math:addInts
   packages:
@@ -33,9 +38,25 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2070
+- serviceName: project.siqa_testpublish_2209.integrations:Test_GV
+  packages:
+  - name: SIQA_TestPublish_2209Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: GB_1:readGlobalvariable
+  packages:
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
 - serviceName: project.siqa_testpublish_2209.integrations:deepclonetest
   packages:
   - name: SIQA_TestPublish_2209Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
